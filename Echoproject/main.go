@@ -13,7 +13,7 @@ type Result struct {
 	Multiplication int
 	Division       int
 }
-
+//handler function
 func Calculation(c echo.Context) error {
 	num1 := c.QueryParam("num1")
 	a, err := strconv.Atoi(num1)
